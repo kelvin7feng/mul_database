@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B60182621E1CA8320086BC92 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B60182611E1CA8320086BC92 /* main.cpp */; };
+		B622A6B11DF7C8B600BA440A /* db_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B622A6B01DF7C8B600BA440A /* db_buffer.cpp */; };
+		B622A6B51DF7EC0900BA440A /* db_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B622A6B31DF7EC0900BA440A /* db_client.cpp */; };
+		B622A6BB1DFBF23600BA440A /* redis_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B622A6B91DFBF23600BA440A /* redis_client.cpp */; };
+		B622A6C51DFBF41900BA440A /* libhiredis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B622A6BC1DFBF32800BA440A /* libhiredis.a */; };
+		B622A6C61DFBF41900BA440A /* libmysqlclient.18.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B622A6BD1DFBF32800BA440A /* libmysqlclient.18.dylib */; };
+		B622A6C71DFBF41900BA440A /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B622A6BE1DFBF32800BA440A /* libmysqlclient.a */; };
+		B622A6C81DFBF41900BA440A /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B622A6BF1DFBF32800BA440A /* libuv.a */; };
+		B622A6CE1DFEB6D400BA440A /* db_client_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B622A6CC1DFEB6D400BA440A /* db_client_manager.cpp */; };
+		B622A70C1DFFB0A100BA440A /* ktimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B622A70B1DFFB0A100BA440A /* ktimer.cpp */; };
+		B6D9FC2F1E165CC500109584 /* mysql_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6D9FC2D1E165CC500109584 /* mysql_client.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B622A6A11DF7AAEE00BA440A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B60182611E1CA8320086BC92 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = database/main.cpp; sourceTree = SOURCE_ROOT; };
+		B622A6A31DF7AAEE00BA440A /* database */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = database; sourceTree = BUILT_PRODUCTS_DIR; };
+		B622A6AF1DF7C7BC00BA440A /* db_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = db_buffer.h; path = common/db_buffer.h; sourceTree = "<group>"; };
+		B622A6B01DF7C8B600BA440A /* db_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = db_buffer.cpp; path = common/db_buffer.cpp; sourceTree = "<group>"; };
+		B622A6B21DF7E67800BA440A /* db_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = db_def.h; path = common/db_def.h; sourceTree = "<group>"; };
+		B622A6B31DF7EC0900BA440A /* db_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = db_client.cpp; path = db_proxy/db_client.cpp; sourceTree = "<group>"; };
+		B622A6B41DF7EC0900BA440A /* db_client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = db_client.hpp; path = db_proxy/db_client.hpp; sourceTree = "<group>"; };
+		B622A6B81DF8024A00BA440A /* kmacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kmacros.h; path = common/kmacros.h; sourceTree = "<group>"; };
+		B622A6B91DFBF23600BA440A /* redis_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = redis_client.cpp; path = db_proxy/redis_client.cpp; sourceTree = "<group>"; };
+		B622A6BA1DFBF23600BA440A /* redis_client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = redis_client.hpp; path = db_proxy/redis_client.hpp; sourceTree = "<group>"; };
+		B622A6BC1DFBF32800BA440A /* libhiredis.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhiredis.a; path = third_party/lib/libhiredis.a; sourceTree = "<group>"; };
+		B622A6BD1DFBF32800BA440A /* libmysqlclient.18.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmysqlclient.18.dylib; path = third_party/lib/libmysqlclient.18.dylib; sourceTree = "<group>"; };
+		B622A6BE1DFBF32800BA440A /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmysqlclient.a; path = third_party/lib/libmysqlclient.a; sourceTree = "<group>"; };
+		B622A6BF1DFBF32800BA440A /* libuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuv.a; path = third_party/lib/libuv.a; sourceTree = "<group>"; };
+		B622A6C91DFBF4B500BA440A /* ktimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ktimer.h; path = common/ktimer.h; sourceTree = "<group>"; };
+		B622A6CA1DFBF53000BA440A /* krequest_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = krequest_def.h; path = common/krequest_def.h; sourceTree = "<group>"; };
+		B622A6CC1DFEB6D400BA440A /* db_client_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = db_client_manager.cpp; path = db_proxy/db_client_manager.cpp; sourceTree = "<group>"; };
+		B622A6CD1DFEB6D400BA440A /* db_client_manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = db_client_manager.hpp; path = db_proxy/db_client_manager.hpp; sourceTree = "<group>"; };
+		B622A70B1DFFB0A100BA440A /* ktimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ktimer.cpp; path = common/ktimer.cpp; sourceTree = "<group>"; };
+		B6D9FC2D1E165CC500109584 /* mysql_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mysql_client.cpp; path = db_proxy/mysql_client.cpp; sourceTree = "<group>"; };
+		B6D9FC2E1E165CC500109584 /* mysql_client.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mysql_client.hpp; path = db_proxy/mysql_client.hpp; sourceTree = "<group>"; };
+		B6D9FC301E165D7800109584 /* mysql_database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mysql_database.h; path = db_proxy/mysql_database.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B622A6A01DF7AAEE00BA440A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B622A6C51DFBF41900BA440A /* libhiredis.a in Frameworks */,
+				B622A6C61DFBF41900BA440A /* libmysqlclient.18.dylib in Frameworks */,
+				B622A6C71DFBF41900BA440A /* libmysqlclient.a in Frameworks */,
+				B622A6C81DFBF41900BA440A /* libuv.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B622A69A1DF7AAEE00BA440A = {
+			isa = PBXGroup;
+			children = (
+				B622A6C41DFBF32D00BA440A /* lib */,
+				B622A6B61DF7EC0F00BA440A /* db_proxy */,
+				B622A6AD1DF7C76C00BA440A /* common */,
+				B622A6A51DF7AAEE00BA440A /* database */,
+				B622A6A41DF7AAEE00BA440A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B622A6A41DF7AAEE00BA440A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B622A6A31DF7AAEE00BA440A /* database */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B622A6A51DF7AAEE00BA440A /* database */ = {
+			isa = PBXGroup;
+			children = (
+				B60182611E1CA8320086BC92 /* main.cpp */,
+			);
+			name = database;
+			path = thread;
+			sourceTree = "<group>";
+		};
+		B622A6AD1DF7C76C00BA440A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B622A70B1DFFB0A100BA440A /* ktimer.cpp */,
+				B622A6AF1DF7C7BC00BA440A /* db_buffer.h */,
+				B622A6B01DF7C8B600BA440A /* db_buffer.cpp */,
+				B622A6B21DF7E67800BA440A /* db_def.h */,
+				B622A6B81DF8024A00BA440A /* kmacros.h */,
+				B622A6C91DFBF4B500BA440A /* ktimer.h */,
+				B622A6CA1DFBF53000BA440A /* krequest_def.h */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		B622A6B61DF7EC0F00BA440A /* db_proxy */ = {
+			isa = PBXGroup;
+			children = (
+				B622A6B31DF7EC0900BA440A /* db_client.cpp */,
+				B622A6B41DF7EC0900BA440A /* db_client.hpp */,
+				B622A6B91DFBF23600BA440A /* redis_client.cpp */,
+				B622A6BA1DFBF23600BA440A /* redis_client.hpp */,
+				B622A6CC1DFEB6D400BA440A /* db_client_manager.cpp */,
+				B622A6CD1DFEB6D400BA440A /* db_client_manager.hpp */,
+				B6D9FC2D1E165CC500109584 /* mysql_client.cpp */,
+				B6D9FC2E1E165CC500109584 /* mysql_client.hpp */,
+				B6D9FC301E165D7800109584 /* mysql_database.h */,
+			);
+			name = db_proxy;
+			sourceTree = "<group>";
+		};
+		B622A6C41DFBF32D00BA440A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B622A6BC1DFBF32800BA440A /* libhiredis.a */,
+				B622A6BD1DFBF32800BA440A /* libmysqlclient.18.dylib */,
+				B622A6BE1DFBF32800BA440A /* libmysqlclient.a */,
+				B622A6BF1DFBF32800BA440A /* libuv.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B622A6A21DF7AAEE00BA440A /* database */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B622A6AA1DF7AAEE00BA440A /* Build configuration list for PBXNativeTarget "database" */;
+			buildPhases = (
+				B622A69F1DF7AAEE00BA440A /* Sources */,
+				B622A6A01DF7AAEE00BA440A /* Frameworks */,
+				B622A6A11DF7AAEE00BA440A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = database;
+			productName = thread;
+			productReference = B622A6A31DF7AAEE00BA440A /* database */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B622A69B1DF7AAEE00BA440A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = kelvin;
+				TargetAttributes = {
+					B622A6A21DF7AAEE00BA440A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B622A69E1DF7AAEE00BA440A /* Build configuration list for PBXProject "database" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B622A69A1DF7AAEE00BA440A;
+			productRefGroup = B622A6A41DF7AAEE00BA440A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B622A6A21DF7AAEE00BA440A /* database */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B622A69F1DF7AAEE00BA440A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D9FC2F1E165CC500109584 /* mysql_client.cpp in Sources */,
+				B622A6CE1DFEB6D400BA440A /* db_client_manager.cpp in Sources */,
+				B622A6B11DF7C8B600BA440A /* db_buffer.cpp in Sources */,
+				B622A6BB1DFBF23600BA440A /* redis_client.cpp in Sources */,
+				B60182621E1CA8320086BC92 /* main.cpp in Sources */,
+				B622A6B51DF7EC0900BA440A /* db_client.cpp in Sources */,
+				B622A70C1DFFB0A100BA440A /* ktimer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B622A6A81DF7AAEE00BA440A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B622A6A91DF7AAEE00BA440A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B622A6AB1DF7AAEE00BA440A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/third_party/",
+					"$(SRCROOT)/third_party/rapidjson/",
+					"$(SRCROOT)/third_party/libuv/include/",
+					"$(SRCROOT)/third_party/mysql_connector/include/",
+					"$(SRCROOT)/third_party/hiredis/",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/third_party/lib";
+				PRODUCT_NAME = database;
+			};
+			name = Debug;
+		};
+		B622A6AC1DF7AAEE00BA440A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/third_party/",
+					"$(SRCROOT)/third_party/rapidjson/",
+					"$(SRCROOT)/third_party/libuv/include/",
+					"$(SRCROOT)/third_party/mysql_connector/include/",
+					"$(SRCROOT)/third_party/hiredis/",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/third_party/lib";
+				PRODUCT_NAME = database;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B622A69E1DF7AAEE00BA440A /* Build configuration list for PBXProject "database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B622A6A81DF7AAEE00BA440A /* Debug */,
+				B622A6A91DF7AAEE00BA440A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B622A6AA1DF7AAEE00BA440A /* Build configuration list for PBXNativeTarget "database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B622A6AB1DF7AAEE00BA440A /* Debug */,
+				B622A6AC1DF7AAEE00BA440A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B622A69B1DF7AAEE00BA440A /* Project object */;
+}
